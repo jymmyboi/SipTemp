@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Red Wine",
+    "min_temp": -10,
+    "max_temp": 15
+  },
+  {
+    "name": "White Wine",
+    "min_temp": 16,
+    "max_temp": 30
+  },
+  {
+    "name": "Pale Beer",
+    "min_temp": 20,
+    "max_temp": 40
+  },
+  {
+    "name": "Dark Beer",
+    "min_temp": -10,
+    "max_temp": 20
+  },
+  {
+    "name": "Whiskey",
+    "min_temp": -10,
+    "max_temp": 20
+  }
+]
