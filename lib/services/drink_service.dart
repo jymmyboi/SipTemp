@@ -1,7 +1,5 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter/foundation.dart';
 import '../models/drink_model.dart';
 
 class DrinkService {
@@ -36,10 +34,6 @@ class DrinkService {
     for (var drink in drinks) {
       if (currentTemp >= drink.minTemp && currentTemp <= drink.maxTemp) {
         drinkList.add(drink.name);
-        print(currentTemp.toString() +
-            drink.name +
-            drink.minTemp.toString() +
-            drink.maxTemp.toString());
       }
     }
     return drinkList;

@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:temp_sip/components/drink_tile.dart';
-import 'package:temp_sip/models/drink_model.dart';
-import 'package:temp_sip/services/drink_service.dart';
 
-class TileBuilder extends StatefulWidget {
-  const TileBuilder({super.key});
+class TileBuilder extends StatelessWidget {
+  const TileBuilder({
+    super.key,
+    required List<String>? drinkList,
+  }) : _drinkList = drinkList;
 
-  @override
-  State<TileBuilder> createState() => _TileBuilderState();
-}
+  final List<String>? _drinkList;
 
-class _TileBuilderState extends State<TileBuilder> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView.builder(
+      itemCount: _drinkList!.length,
+      itemBuilder: (context, index) {
+        return DrinkTile(drinkName: _drinkList[index]);
+      },
+    );
   }
 }

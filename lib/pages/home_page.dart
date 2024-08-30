@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:temp_sip/components/drink_tile.dart';
-import 'package:temp_sip/models/drink_model.dart';
+import 'package:logger/logger.dart';
+import 'package:temp_sip/components/tile_builder.dart';
 import 'package:temp_sip/services/drink_service.dart';
 import 'package:temp_sip/services/weather_service.dart';
 
@@ -14,9 +14,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Logger logger = Logger();
   final _weatherService = WeatherService();
   Weather? _weather;
-  DrinkService? _drinkService; // Store DrinkService instance
   List<String>? _drinkList;
 
   Future<void> _fetchWeatherAndDrinks() async {
@@ -33,10 +33,9 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _weather = weather;
         _drinkList = drinkService.getDrinks();
-        print(_drinkList![1]);
       });
     } catch (e) {
-      print('Error loading weather or drinks: $e');
+      logger.e('Error loading weather or drinks: $e');
     }
   }
 
@@ -57,18 +56,14 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(20),
               child: Text(_weather?.cityName ?? "City loading"),
             ),
-            Text("${_weather?.temperature.round()}°C" ?? "Temp loading"),
+            Text("${_weather?.temperature.round()}°C"),
             if (_drinkList != null) // Check if _drinkService is not null
               Expanded(
-                child: ListView.builder(
-                  itemCount: _drinkList!.length,
-                  itemBuilder: (context, index) {
-                    return DrinkTile(drinkName: _drinkList![index]);
-                  },
-                ),
+                child: TileBuilder(drinkList: _drinkList),
               )
             else
-              Text("Drinks data loading"), // Placeholder text while loading
+              const Text(
+                  "Drinks data loading"), // Placeholder text while loading
           ],
         ),
       ),
