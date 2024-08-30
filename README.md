@@ -1,6 +1,6 @@
-# TempSip
+# SipTemp
 
-Welcome to **TempSip**! This Flutter application provides real-time weather updates and suggests the best drinks to enjoy based on the current weather conditions.
+Welcome to **SipTemp**! This Flutter application provides real-time weather updates and suggests the best drinks to enjoy based on the current weather conditions.
 
 ## Features
 
@@ -11,7 +11,7 @@ Welcome to **TempSip**! This Flutter application provides real-time weather upda
 
 ## Getting Started
 
-To get started with the TempSip app, follow the instructions below:
+To get started with the SipTemp app, follow the instructions below:
 
 ### Prerequisites
 
@@ -23,8 +23,8 @@ To get started with the TempSip app, follow the instructions below:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/jymmyboi/TempSip.git
-   cd TempSip
+   git clone https://github.com/jymmyboi/SipTemp.git
+   cd SipTemp
    ```
 
 2. **Install dependencies**:
@@ -53,7 +53,7 @@ To get started with the TempSip app, follow the instructions below:
 
 ## Contributing
 
-We welcome contributions to the TempSip app! If you have a feature request, bug report, or drink request, please open an issue!
+We welcome contributions to the SipTemp app! If you have a feature request, bug report, or drink request, please open an issue!
 
 ## License
 
