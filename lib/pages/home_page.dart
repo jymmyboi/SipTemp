@@ -50,7 +50,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("SipTemp"),
+        backgroundColor: const Color.fromARGB(255, 0, 121, 107),
+        title: const Text(
+          "SipTemp",
+          style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+        ),
         actions: [
           IconButton(
               onPressed: () {
@@ -60,7 +64,10 @@ class _HomePageState extends State<HomePage> {
                       builder: (context) => SettingsPage(),
                     ));
               },
-              icon: Icon(Icons.settings))
+              icon: const Icon(
+                Icons.settings,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ))
         ],
       ),
       body: Center(
@@ -69,9 +76,18 @@ class _HomePageState extends State<HomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Text(_weather?.cityName ?? "City loading"),
+              child: Text(
+                _weather?.cityName ?? "City loading",
+                style: const TextStyle(color: Color.fromARGB(255, 33, 33, 33)),
+              ),
             ),
-            Text("${_weather?.temperature.round()}°C"),
+            Text(
+              "${_weather?.temperature.round()}°C",
+              style: const TextStyle(
+                fontSize: 35,
+                color: Color.fromARGB(255, 33, 33, 33),
+              ),
+            ),
             if (_drinkList != null) // Check if _drinkService is not null
               Expanded(
                 child: TileBuilder(drinkList: _drinkList),

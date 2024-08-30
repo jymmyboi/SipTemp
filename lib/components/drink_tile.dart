@@ -7,17 +7,32 @@ class DrinkTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(15),
       child: Container(
-        padding: EdgeInsets.all(15),
+        width: 200,
+        height: 300,
+        padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.lightBlue,
+          color: const Color.fromARGB(255, 0, 150, 136),
         ),
         child: Center(
-          child: Text(
-            drinkName,
-            style: TextStyle(fontSize: 25),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                drinkName,
+                style: const TextStyle(
+                    fontSize: 25, color: Color.fromARGB(255, 255, 255, 255)),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 10.0),
+                child: Icon(
+                  Icons.arrow_circle_right,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                ),
+              )
+            ],
           ),
         ),
       ),
