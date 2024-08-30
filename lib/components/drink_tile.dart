@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:temp_sip/pages/drink_page.dart';
 
 class DrinkTile extends StatelessWidget {
   final String drinkName;
@@ -8,31 +9,40 @@ class DrinkTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(15),
-      child: Container(
-        width: 200,
-        height: 300,
-        padding: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: const Color.fromARGB(255, 0, 150, 136),
-        ),
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                drinkName,
-                style: const TextStyle(
-                    fontSize: 25, color: Color.fromARGB(255, 255, 255, 255)),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 10.0),
-                child: Icon(
-                  Icons.arrow_circle_right,
-                  color: Color.fromARGB(255, 255, 255, 255),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DrinkPage(),
+              ));
+        },
+        child: Container(
+          width: 200,
+          height: 150,
+          padding: const EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: const Color.fromARGB(255, 0, 150, 136),
+          ),
+          child: Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  drinkName,
+                  style: const TextStyle(
+                      fontSize: 25, color: Color.fromARGB(255, 255, 255, 255)),
                 ),
-              )
-            ],
+                const Padding(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Icon(
+                    Icons.arrow_circle_right,
+                    color: Color.fromARGB(255, 255, 255, 255),
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
