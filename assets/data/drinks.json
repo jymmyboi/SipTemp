@@ -2,26 +2,31 @@
   {
     "name": "Red Wine",
     "min_temp": -10,
-    "max_temp": 15
+    "max_temp": 15,
+    "description": ""
   },
   {
     "name": "White Wine",
     "min_temp": 16,
-    "max_temp": 30
+    "max_temp": 30,
+    "description": ""
   },
   {
     "name": "Pale Beer",
     "min_temp": 20,
-    "max_temp": 40
+    "max_temp": 40,
+    "description": ""
   },
   {
     "name": "Dark Beer",
     "min_temp": -10,
-    "max_temp": 20
+    "max_temp": 20,
+    "description": ""
   },
   {
     "name": "Whiskey",
     "min_temp": -10,
-    "max_temp": 20
+    "max_temp": 20,
+    "description": ""
   }
 ]
