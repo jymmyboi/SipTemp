@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 import 'package:temp_sip/components/tile_builder.dart';
+import 'package:temp_sip/pages/settings_page.dart';
 import 'package:temp_sip/services/drink_service.dart';
 import 'package:temp_sip/services/weather_service.dart';
 
@@ -48,6 +49,20 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("SipTemp"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SettingsPage(),
+                    ));
+              },
+              icon: Icon(Icons.settings))
+        ],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

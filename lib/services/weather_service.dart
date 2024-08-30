@@ -9,10 +9,6 @@ import 'package:http/http.dart' as http;
 class WeatherService {
   static const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
-  Future getApiKey() async {
-    await dotenv.load(fileName: 'key.env');
-  }
-
   final String? apiKey = dotenv.env['API_KEY'];
 
   WeatherService();

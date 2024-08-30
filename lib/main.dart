@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'pages/home_page.dart';
 
-void main() {
+Future main() async {
+  await dotenv.load(fileName: "key.env");
   runApp(const MyApp());
 }
 
