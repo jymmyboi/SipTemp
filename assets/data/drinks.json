@@ -1,15 +1,129 @@
 [
   {
-    "name": "Red Wine",
+    "name": "Pinot Noir",
     "min_temp": -10,
     "max_temp": 15,
-    "description": ""
+    "description": "",
+    "type": "redwine"
   },
   {
-    "name": "White Wine",
+    "name": "Sangiovese",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Tempranillo",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Nero d'Avola",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Grenache",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Cabernet Sauvignon",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Shiraz",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Nebbiolo",
+    "min_temp": -10,
+    "max_temp": 15,
+    "description": "",
+    "type": "redwine"
+  },
+  {
+    "name": "Riesling",
     "min_temp": 16,
     "max_temp": 30,
-    "description": ""
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Semillon",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Sauvignon Blanc",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Vermentino",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Gruner Veltliner",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Pinot Gris",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Fiano",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Chenin Blanc",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Viognier",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
+  },
+  {
+    "name": "Chardonnay",
+    "min_temp": 16,
+    "max_temp": 30,
+    "description": "",
+    "type": "whitewine"
   },
   {
     "name": "Pale Beer",
@@ -18,9 +132,15 @@
     "description": ""
   },
   {
-    "name": "Dark Beer",
-    "min_temp": -10,
+    "name": "Porter Beer",
+    "min_temp": 5,
     "max_temp": 20,
+    "description": ""
+  },
+  {
+    "name": "Stout Beer",
+    "min_temp": -10,
+    "max_temp": 10,
     "description": ""
   },
   {
