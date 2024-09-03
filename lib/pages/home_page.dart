@@ -81,11 +81,14 @@ class _HomePageState extends State<HomePage> {
                 style: const TextStyle(color: Color.fromARGB(255, 33, 33, 33)),
               ),
             ),
-            Text(
-              "${_weather?.temperature.round()}°C",
-              style: const TextStyle(
-                fontSize: 35,
-                color: Color.fromARGB(255, 33, 33, 33),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10.0),
+              child: Text(
+                "${_weather?.temperature.round()}°C",
+                style: const TextStyle(
+                  fontSize: 35,
+                  color: Color.fromARGB(255, 33, 33, 33),
+                ),
               ),
             ),
             if (_drinkList != null) // Check if _drinkService is not null
