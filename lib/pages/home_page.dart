@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
+import 'package:temp_sip/components/temp_box.dart';
 import 'package:temp_sip/components/tile_builder.dart';
 import 'package:temp_sip/pages/settings_page.dart';
 import 'package:temp_sip/services/drink_service.dart';
@@ -74,23 +75,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Text(
-                _weather?.cityName ?? "City loading",
-                style: const TextStyle(color: Color.fromARGB(255, 33, 33, 33)),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 10.0),
-              child: Text(
-                "${_weather?.temperature.round()}°C",
-                style: const TextStyle(
-                  fontSize: 35,
-                  color: Color.fromARGB(255, 33, 33, 33),
-                ),
-              ),
-            ),
+            TempBox(weather: _weather),
+
             if (_drinkList != null) // Check if _drinkService is not null
               Expanded(
                 child: TileBuilder(drinkList: _drinkList),
