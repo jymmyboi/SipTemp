@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:temp_sip/models/weather_model.dart';
+import 'package:siptemp/models/weather_model.dart';
 
 class TempBox extends StatelessWidget {
   const TempBox({

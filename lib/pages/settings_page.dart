@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:temp_sip/components/settings_tiles.dart';
+import 'package:siptemp/components/settings_tiles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -36,7 +36,7 @@ class SettingsPage extends StatelessWidget {
                 SettingsTiles(
                   settingTitle: "Author",
                   childText:
-                      "SipTemp is a creation by James Seton. A booze enthusiast by his own admission. He created this app as a way for people to experiment with the way they order/buy alcohol.",
+                      "SipTemp is a creation by James Seton. An Aussie booze enthusiast by his own admission. He created this app as a way for people to experiment with the way they order/buy alcohol.",
                 )
               ],
             ),

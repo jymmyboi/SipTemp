@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:temp_sip/components/drink_tile.dart';
+import 'package:siptemp/components/drink_tile.dart';
 
 class TileBuilder extends StatelessWidget {
   const TileBuilder({

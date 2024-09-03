@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:temp_sip/pages/drink_page.dart';
+import 'package:siptemp/pages/drink_page.dart';
 
 class DrinkTile extends StatelessWidget {
   final String drinkName;
