@@ -14,7 +14,7 @@ class DrinkTile extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => DrinkPage(),
+                builder: (context) => const DrinkPage(),
               ));
         },
         child: Container(

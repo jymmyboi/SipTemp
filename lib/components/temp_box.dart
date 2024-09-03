@@ -15,7 +15,7 @@ class TempBox extends StatelessWidget {
       elevation: 20,
       child: Container(
         width: double.infinity,
-        color: Color.fromARGB(255, 178, 223, 219),
+        color: const Color.fromARGB(255, 178, 223, 219),
         child: Column(
           children: [
             Padding(
