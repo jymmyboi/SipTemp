@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:temp_sip/components/settings_tiles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -17,15 +18,46 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings"),
+        title: const Text("Settings"),
       ),
       body: Center(
+        //full body column
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            ElevatedButton(
-              onPressed: _launchUrl,
-              child: Text("Coffee"),
+            //expansion tiles column
+            const Column(
+              children: [
+                SettingsTiles(
+                  settingTitle: "LICENSE",
+                  childText:
+                      "This application is free under the GNU General Public License as published by the Free Software Foundation.",
+                ),
+                SettingsTiles(
+                  settingTitle: "Author",
+                  childText:
+                      "SipTemp is a creation by James Seton. A booze enthusiast by his own admission. He created this app as a way for people to experiment with the way they order/buy alcohol.",
+                )
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: ElevatedButton(
+                onPressed: _launchUrl,
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.coffee,
+                      color: Color.fromARGB(255, 33, 33, 33),
+                    ),
+                    Text(
+                      "Buy me a coffee",
+                      style: TextStyle(color: Color.fromARGB(255, 33, 33, 33)),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
