@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:logger/logger.dart';
 import 'package:siptemp/components/temp_box.dart';
 import 'package:siptemp/components/tile_builder.dart';
@@ -36,6 +37,7 @@ class _HomePageState extends State<HomePage> {
         _weather = weather;
         _drinkList = drinkService.getDrinks();
       });
+      FlutterNativeSplash.remove();
     } catch (e) {
       logger.e('Error loading weather or drinks: $e');
     }
