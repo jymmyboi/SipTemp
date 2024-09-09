@@ -1,152 +1,296 @@
 [
   {
     "name": "Pinot Noir",
-    "min_temp": -10,
-    "max_temp": 15,
-    "description": "",
+    "min_temp": 10,
+    "max_temp": 20,
+    "description": "A light-bodied red wine with flavors of red fruits like cherry and raspberry, balanced with earthy undertones.",
     "type": "redwine"
   },
   {
     "name": "Sangiovese",
-    "min_temp": -10,
-    "max_temp": 15,
-    "description": "",
+    "min_temp": 10,
+    "max_temp": 20,
+    "description": "A medium-bodied red wine with bright acidity and flavors of red plum, cherry, and savory herbs.",
     "type": "redwine"
   },
   {
     "name": "Tempranillo",
-    "min_temp": -10,
+    "min_temp": 0,
     "max_temp": 15,
-    "description": "",
+    "description": "A Spanish red wine with flavors of plum, leather, and tomato, often aged in oak for added complexity.",
     "type": "redwine"
   },
   {
     "name": "Nero d'Avola",
-    "min_temp": -10,
+    "min_temp": 0,
     "max_temp": 15,
-    "description": "",
+    "description": "A full-bodied Sicilian red wine with bold flavors of black cherry, plum, and chocolate.",
     "type": "redwine"
   },
   {
     "name": "Grenache",
-    "min_temp": -10,
+    "min_temp": 0,
     "max_temp": 15,
-    "description": "",
+    "description": "A fruity red wine with flavors of strawberry, plum, and hints of herbs and spices.",
     "type": "redwine"
   },
   {
     "name": "Cabernet Sauvignon",
     "min_temp": -10,
-    "max_temp": 15,
-    "description": "",
+    "max_temp": 10,
+    "description": "A full-bodied red wine with dark fruit flavors of blackberry and black currant, complemented by notes of oak and tobacco.",
     "type": "redwine"
   },
   {
     "name": "Shiraz",
-    "min_temp": -10,
-    "max_temp": 15,
-    "description": "",
+    "min_temp": -15,
+    "max_temp": 10,
+    "description": "A rich and bold red wine with spicy, peppery flavors and dark fruit notes like blackberry and plum.",
     "type": "redwine"
   },
   {
     "name": "Nebbiolo",
     "min_temp": -10,
     "max_temp": 15,
-    "description": "",
+    "description": "An Italian red wine known for its strong tannins and flavors of cherry, rose, and leather.",
     "type": "redwine"
   },
   {
     "name": "Riesling",
-    "min_temp": 16,
-    "max_temp": 30,
-    "description": "",
+    "min_temp": 20,
+    "max_temp": 40,
+    "description": "A light and aromatic white wine with flavors of green apple, citrus, and stone fruits. It can range from dry to sweet.",
     "type": "whitewine"
   },
   {
     "name": "Semillon",
-    "min_temp": 16,
-    "max_temp": 30,
-    "description": "",
+    "min_temp": 25,
+    "max_temp": 35,
+    "description": "A rich and full-bodied white wine with flavors of lemon, apple, and honey. Often used in dessert wines.",
     "type": "whitewine"
   },
   {
     "name": "Sauvignon Blanc",
     "min_temp": 16,
-    "max_temp": 30,
-    "description": "",
+    "max_temp": 35,
+    "description": "A crisp and refreshing white wine with flavors of green apple, lime, and grassy notes.",
     "type": "whitewine"
   },
   {
     "name": "Vermentino",
     "min_temp": 16,
     "max_temp": 30,
-    "description": "",
+    "description": "A light-bodied white wine with flavors of citrus, pear, and almond, often with a saline finish.",
     "type": "whitewine"
   },
   {
     "name": "Gruner Veltliner",
     "min_temp": 16,
     "max_temp": 30,
-    "description": "",
+    "description": "An Austrian white wine known for its zesty acidity and flavors of lime, green apple, and white pepper.",
     "type": "whitewine"
   },
   {
     "name": "Pinot Gris",
     "min_temp": 16,
     "max_temp": 30,
-    "description": "",
+    "description": "A light and refreshing white wine with flavors of pear, apple, and citrus, often with a subtle spiciness.",
     "type": "whitewine"
   },
   {
     "name": "Fiano",
     "min_temp": 16,
-    "max_temp": 30,
-    "description": "",
+    "max_temp": 40,
+    "description": "A medium-bodied Italian white wine with flavors of honey, nuts, and tropical fruits.",
     "type": "whitewine"
   },
   {
     "name": "Chenin Blanc",
     "min_temp": 16,
     "max_temp": 30,
-    "description": "",
+    "description": "A versatile white wine with flavors of apple, pear, and honey, ranging from dry to sweet.",
     "type": "whitewine"
   },
   {
     "name": "Viognier",
     "min_temp": 16,
     "max_temp": 30,
-    "description": "",
+    "description": "A rich and aromatic white wine with flavors of peach, apricot, and floral notes.",
     "type": "whitewine"
   },
   {
     "name": "Chardonnay",
     "min_temp": 16,
     "max_temp": 30,
-    "description": "",
+    "description": "A full-bodied white wine with flavors of apple, pear, and oak, often with buttery notes from malolactic fermentation.",
     "type": "whitewine"
   },
   {
-    "name": "Pale Beer",
-    "min_temp": 20,
-    "max_temp": 40,
-    "description": ""
+    "name": "Pilsner",
+    "min_temp": 30,
+    "max_temp": 45,
+    "description": "A light and crisp beer with a golden color and clean finish, offering subtle hop bitterness.",
+    "type": "amberbeer"
   },
   {
-    "name": "Porter Beer",
+    "name": "Session Ale",
+    "min_temp": 25,
+    "max_temp": 45,
+    "description": "A low-alcohol beer with a balanced flavor profile, making it refreshing and easy to drink.",
+    "type": "amberbeer"
+  },
+  {
+    "name": "Pale Ale",
+    "min_temp": 25,
+    "max_temp": 50,
+    "description": "A hoppy beer with a mild bitterness and flavors of citrus and pine.",
+    "type": "amberbeer"
+  },
+  {
+    "name": "Sour Beer",
+    "min_temp": 30,
+    "max_temp": 50,
+    "description": "A tart and tangy beer with fruity or citrus notes, offering a refreshing and palate-cleansing experience.",
+    "type": "amberbeer"
+  },
+  {
+    "name": "Lager",
+    "min_temp": 20,
+    "max_temp": 45,
+    "description": "A light and crisp beer with a clean and refreshing finish, perfect for warm weather.",
+    "type": "amberbeer"
+  },
+  {
+    "name": "IPA",
+    "min_temp": 20,
+    "max_temp": 30,
+    "description": "A hop-forward beer with bold citrus, pine, and floral flavors, often with a bitter finish.",
+    "type": "amberbeer"
+  },
+  {
+    "name": "Brown Ale",
     "min_temp": 5,
     "max_temp": 20,
-    "description": ""
+    "description": "A malty beer with flavors of caramel, toffee, and nuts, offering a smooth and slightly sweet taste.",
+    "type": "darkbeer"
   },
   {
-    "name": "Stout Beer",
+    "name": "Porter",
+    "min_temp": 5,
+    "max_temp": 20,
+    "description": "A dark beer with flavors of chocolate, coffee, and roasted malt, offering a rich and smooth experience.",
+    "type": "darkbeer"
+  },
+  {
+    "name": "Imperial Stout",
     "min_temp": -10,
     "max_temp": 10,
-    "description": ""
+    "description": "A strong and rich beer with flavors of dark chocolate, coffee, and roasted malt, perfect for cold weather.",
+    "type": "darkbeer"
   },
   {
-    "name": "Whiskey",
+    "name": "Barley Wine",
+    "min_temp": 0,
+    "max_temp": 15,
+    "description": "A high-alcohol beer with rich malt flavors of caramel, toffee, and dried fruit.",
+    "type": "darkbeer"
+  },
+  {
+    "name": "Glenmorangie Original 10 Year Old",
+    "min_temp": 10,
+    "max_temp": 25,
+    "description": "A light and floral Scotch whisky with hints of citrus and vanilla, offering a refreshing sip.",
+    "type": "scotch"
+  },
+  {
+    "name": "Maker’s Mark",
+    "min_temp": 15,
+    "max_temp": 30,
+    "description": "A smooth and sweet wheated bourbon featuring caramel, vanilla, and fruity notes.",
+    "type": "bourbon"
+  },
+  {
+    "name": "Jameson Irish Whiskey",
+    "min_temp": 10,
+    "max_temp": 25,
+    "description": "Crisp and smooth, with notes of vanilla, citrus, and light spice, ideal for mixed drinks.",
+    "type": "irishwhiskey"
+  },
+  {
+    "name": "Buffalo Trace",
+    "min_temp": 15,
+    "max_temp": 30,
+    "description": "A balanced bourbon with vanilla, caramel, and fruity hints, ideal for whiskey cocktails.",
+    "type": "bourbon"
+  },
+  {
+    "name": "Lagavulin 16 Year Old",
     "min_temp": -10,
-    "max_temp": 20,
-    "description": ""
+    "max_temp": 10,
+    "description": "A bold Islay Scotch with intense peat smoke, rich sweetness, and a long, warming finish—perfect for cold nights.",
+    "type": "scotchwhiskey"
+  },
+  {
+    "name": "GlenDronach 18 Year Old",
+    "min_temp": -5,
+    "max_temp": 10,
+    "description": "Sherry-cask-aged Scotch with rich dark fruit flavors, chocolate, and warming spices, ideal for winter sipping.",
+    "type": "scotchwhiskey"
+  },
+  {
+    "name": "Ardbeg Uigeadail",
+    "min_temp": -5,
+    "max_temp": 10,
+    "description": "A smoky, powerful Islay whisky with layers of dark chocolate, dried fruit, and intense peat, offering warmth and depth.",
+    "type": "scotchwhiskey"
+  },
+  {
+    "name": "Redbreast 15 Year Old",
+    "min_temp": -5,
+    "max_temp": 10,
+    "description": "A sherried Irish whiskey with rich, spicy, and fruity notes of nuts, raisins, and baking spices, perfect for cold evenings.",
+    "type": "irishwhiskey"
+  },
+  {
+    "name": "Macallan Sherry Oak 12 Year",
+    "min_temp": -5,
+    "max_temp": 10,
+    "description": "A classic sherried Scotch with rich flavors of dried fruit, vanilla, and warm spices, making it a winter staple.",
+    "type": "scotchwhiskey"
+  },
+  {
+    "name": "Elijah Craig Barrel Proof",
+    "min_temp": -10,
+    "max_temp": 5,
+    "description": "A robust, high-proof bourbon with deep caramel, vanilla, and oak flavors, offering a warming kick for cold weather.",
+    "type": "bourbon"
+  },
+  {
+    "name": "Laphroaig 10 Year Old",
+    "min_temp": -10,
+    "max_temp": 10,
+    "description": "A smoky, medicinal Islay Scotch with bold peat, salty seaweed, and warming spice flavors—great for braving the winter chill.",
+    "type": "scotchwhiskey"
+  },
+  {
+    "name": "Balvenie DoubleWood 12 Year Old",
+    "min_temp": -5,
+    "max_temp": 10,
+    "description": "A sweet and malty Scotch with layers of sherry, oak, and honeyed fruit, offering warmth and complexity.",
+    "type": "scotchwhiskey"
+  },
+  {
+    "name": "Old Forester 1920 Prohibition Style",
+    "min_temp": -10,
+    "max_temp": 5,
+    "description": "A high-proof bourbon with rich caramel, vanilla, and spice flavors, perfect for a warming winter dram.",
+    "type": "bourbon"
+  },
+  {
+    "name": "Highland Park 18 Year Old",
+    "min_temp": -5,
+    "max_temp": 10,
+    "description": "A complex Scotch with balanced peat, heather honey, dried fruits, and warm spices, offering rich, comforting flavors.",
+    "type": "scotchwhiskey"
   }
 ]
