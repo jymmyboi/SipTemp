@@ -19,7 +19,7 @@ class DrinkTile extends StatelessWidget {
         },
         child: Container(
           width: 200,
-          height: 150,
+          height: 100,
           padding: const EdgeInsets.all(15),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
@@ -29,10 +29,14 @@ class DrinkTile extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  drinkName,
-                  style: const TextStyle(
-                      fontSize: 25, color: Color.fromARGB(255, 255, 255, 255)),
+                Expanded(
+                  child: Text(
+                    drinkName,
+                    style: const TextStyle(
+                      fontSize: 25,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
                 ),
                 const Padding(
                   padding: EdgeInsets.only(left: 10.0),
