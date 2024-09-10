@@ -57,6 +57,6 @@ We welcome contributions to the SipTemp app! If you have a feature request, bug 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU License - see the [LICENSE](LICENSE) file for details.
 
 _Happy sipping! Enjoy your drink, whatever the weather._
