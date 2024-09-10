@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:siptemp/components/exclusion_builder.dart';
 import 'package:siptemp/components/settings_tiles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class SettingsPage extends StatelessWidget {
-  const SettingsPage({super.key});
+class SettingsPage extends StatefulWidget {
+  final List<String>? typeList;
+  const SettingsPage({super.key, required this.typeList});
 
+  @override
+  State<SettingsPage> createState() => _SettingsPageState();
+}
+
+class _SettingsPageState extends State<SettingsPage> {
   _launchUrl() async {
     //parsing url to uri
     final Uri url = Uri.parse("https://ko-fi.com/jymmyboi");
@@ -26,17 +33,21 @@ class SettingsPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             //expansion tiles column
-            const Column(
+            Column(
               children: [
-                SettingsTiles(
+                const SettingsTiles(
                   settingTitle: "LICENSE",
                   childText:
                       "This application is free under the GNU General Public License as published by the Free Software Foundation.",
                 ),
-                SettingsTiles(
+                const SettingsTiles(
                   settingTitle: "Author",
                   childText:
                       "SipTemp is a creation by James Seton. An Aussie booze enthusiast by his own admission. He created this app as a way for people to experiment with the way they order/buy alcohol.",
+                ),
+                ExpansionTile(
+                  title: const Text("I don't like: "),
+                  children: [ExclusionBuilder(typeList: widget.typeList)],
                 )
               ],
             ),
