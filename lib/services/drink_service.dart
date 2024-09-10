@@ -38,4 +38,14 @@ class DrinkService {
     }
     return drinkList;
   }
+
+  List<String> getTypes() {
+    List<String> typeList = [];
+    for (var drink in drinks) {
+      if (!typeList.contains(drink.type)) {
+        typeList.add(drink.type);
+      }
+    }
+    return typeList;
+  }
 }
