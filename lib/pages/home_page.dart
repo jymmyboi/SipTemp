@@ -21,7 +21,6 @@ class _HomePageState extends State<HomePage> {
   final _weatherService = WeatherService();
   Weather? _weather;
   List<String>? _drinkList;
-  List<String>? _typeList;
 
   Future<void> _fetchWeatherAndDrinks() async {
     try {
@@ -37,7 +36,6 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _weather = weather;
         _drinkList = drinkService.getDrinks();
-        _typeList = drinkService.getTypes();
       });
       FlutterNativeSplash.remove();
     } catch (e) {
@@ -66,9 +64,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SettingsPage(
-                        typeList: _typeList,
-                      ),
+                      builder: (context) => const SettingsPage(),
                     ));
               },
               icon: const Icon(
