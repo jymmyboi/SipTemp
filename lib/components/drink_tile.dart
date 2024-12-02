@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:siptemp/models/drink_model.dart';
 import 'package:siptemp/pages/drink_page.dart';
 
 class DrinkTile extends StatelessWidget {
-  final String drinkName;
-  const DrinkTile({super.key, required this.drinkName});
+  final Drink drink;
+  const DrinkTile({super.key, required this.drink});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,10 @@ class DrinkTile extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const DrinkPage(),
+                builder: (context) => DrinkPage(
+                  drinkDescription: drink.description,
+                  drinkName: drink.name,
+                ),
               ));
         },
         child: Container(
@@ -31,7 +35,7 @@ class DrinkTile extends StatelessWidget {
               children: [
                 Expanded(
                   child: Text(
-                    drinkName,
+                    drink.name,
                     style: const TextStyle(
                       fontSize: 25,
                       color: Color.fromARGB(255, 255, 255, 255),

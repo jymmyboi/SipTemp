@@ -15,7 +15,7 @@ class TileBuilder extends StatelessWidget {
     return ListView.builder(
       itemCount: _drinkList!.length,
       itemBuilder: (context, index) {
-        return DrinkTile(drinkName: _drinkList[index].name);
+        return DrinkTile(drink: _drinkList[index]);
       },
     );
   }
