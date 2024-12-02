@@ -17,9 +17,13 @@ class DrinkPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(_drinkName),
       ),
-      body: Text(_drinkDescription),
+      body: Padding(
+        padding: const EdgeInsets.all(11.0),
+        child: Text(
+          _drinkDescription,
+          style: const TextStyle(fontSize: 20),
+        ),
+      ),
     );
   }
 }
-
-//TODO: Implement this page. I know how it needs to be done, but will be a solid afternoon of hacking together.

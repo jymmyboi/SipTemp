@@ -36,7 +36,7 @@ class SettingsPage extends StatelessWidget {
                 SettingsTiles(
                   settingTitle: "Author",
                   childText:
-                      "SipTemp is a creation by James Seton. An Aussie booze enthusiast by his own admission. He created this app as a way for people to experiment with the way they order/buy alcohol.",
+                      "SipTemp is a creation by James Seton. An Aussie booze enthusiast by his own admission. He created this app as a way for people to experiment with the way they order/buy alcohol and as a way to work on his learning of Flutter.",
                 )
               ],
             ),
