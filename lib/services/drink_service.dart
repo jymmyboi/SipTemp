@@ -29,11 +29,11 @@ class DrinkService {
     }
   }
 
-  List<String> getDrinks() {
-    List<String> drinkList = [];
+  List<Drink> getDrinks() {
+    List<Drink> drinkList = [];
     for (var drink in drinks) {
       if (currentTemp >= drink.minTemp && currentTemp <= drink.maxTemp) {
-        drinkList.add(drink.name);
+        drinkList.add(drink);
       }
     }
     return drinkList;

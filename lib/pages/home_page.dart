@@ -6,7 +6,7 @@ import 'package:siptemp/components/tile_builder.dart';
 import 'package:siptemp/pages/settings_page.dart';
 import 'package:siptemp/services/drink_service.dart';
 import 'package:siptemp/services/weather_service.dart';
-
+import '../models/drink_model.dart';
 import '../models/weather_model.dart';
 
 class HomePage extends StatefulWidget {
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   Logger logger = Logger();
   final _weatherService = WeatherService();
   Weather? _weather;
-  List<String>? _drinkList;
+  List<Drink>? _drinkList;
 
   Future<void> _fetchWeatherAndDrinks() async {
     try {
