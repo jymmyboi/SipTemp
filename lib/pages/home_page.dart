@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
       final weather = await _weatherService.getWeather(cityName);
 
       // Load drinks from JSON file asynchronously
-      String assetPath = 'assets/data/drinks.json'; // Update with correct path
+      String assetPath = 'assets/data/drinks.json';
       final drinkService =
           await DrinkService.fromJsonFile(weather.temperature, assetPath);
       // Update state with weather and drinks
