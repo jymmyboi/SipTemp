@@ -21,8 +21,7 @@ class DrinkPage extends StatelessWidget {
   _launchUrl() async {
     //parsing url to uri
     final Uri url = Uri.parse(
-        "https://www.danmurphys.com.au/search?searchTerm=" +
-            searchSplit(_drinkName));
+        "https://www.danmurphys.com.au/search?searchTerm=${searchSplit(_drinkName)}");
 
     if (!await launchUrl(url)) {
       throw Exception('Could not launch $url');
